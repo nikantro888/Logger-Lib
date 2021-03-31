@@ -1,0 +1,2 @@
+include ':Log-Lib'
+rootProject.name = "CarBase"
