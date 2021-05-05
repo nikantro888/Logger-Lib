@@ -77,7 +77,7 @@ Extends [Kotlin developers team code style](https://kotlinlang.org/docs/referenc
 12. [Files](#files)
 13. [View Binding](#view_binding)
       * 13.1 [Implementation](#implementation)
-      * 13.2 [Advices](#advices)
+      * 13.2 [Recommendations](#recommendation)
       * 13.3 [Migration](#migration)
 
 
@@ -282,7 +282,7 @@ if (condition) foo()
         return ViewHolder(binding)
     }
  ```
-  ### <a name='advices'>Recomendations for view binding</a>
+  ### <a name='recommendation'>Recomendations for view binding</a>
    
    * Binding
  ```kotlin
@@ -306,7 +306,7 @@ if (condition) foo()
  ```
  
   ### <a name='advices'>Recomendations for view binding</a>
-   - For easier migration, remove kotlin synthetic imports from your class to see exactly which lines needs view binding. 
+   - For easier migration from synthetic to view binding, remove kotlin synthetic imports from your class to see exactly which lines needs view binding. 
    
 
 # Resources
