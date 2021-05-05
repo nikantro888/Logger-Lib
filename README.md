@@ -250,7 +250,7 @@ if (condition) foo()
 ### <a name='view_binding'>View Binding</a>
  We use View Binding in our project to replace deprecated kotlin synthetic.
  
- ## <a name='implementation'>Implementation</a>
+ ### <a name='implementation'>Implementation</a>
  
  Fragment:  
  - override val screenLayout = R.layout.sp_Example_feature_fragment
