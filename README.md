@@ -284,13 +284,14 @@ if (condition) foo()
   ### <a name='Advices'>Recomendations for view binding</a>
    * Binding
     ```kotlin
+      
       binding.titleTextView.text = "space"
     ```
    * Multy binding
        ```kotlin
       with(binding){
-       titleTextView.text = "space"
-       descriptionTextView.text = "description"
+          titleTextView.text = "space"
+          descriptionTextView.text = "description"
       }
  ```
    
