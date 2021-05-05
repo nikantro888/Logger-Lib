@@ -255,8 +255,12 @@ if (condition) foo()
  
  Activity:
  ```kotlin
- private val bind by viewBinding(ActivityExampleLayoutBinding::inflate) 
- In setContentView(bind.root)
+ private val binding by viewBinding(ActivityExampleLayoutBinding::inflate) 
+ 
+ override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstance)
+        setContentView(binding.root)
+ }
  ```
  
  Fragment:  
@@ -278,7 +282,18 @@ if (condition) foo()
     }
  ```
   ### <a name='Advices'>Recomendations for view binding</a>
-
+   * Binding
+    ```kotlin
+      binding.titleTextView.text = "space"
+    ```
+   * Multy binding
+       ```kotlin
+      with(binding){
+       titleTextView.text = "space"
+       descriptionTextView.text = "description"
+      }
+ ```
+   
 
 # Resources
 
