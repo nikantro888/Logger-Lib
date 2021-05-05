@@ -256,15 +256,24 @@ if (condition) foo()
  - private val bind by viewBinding(ActivityExampleLayoutBinding::inflate) 
  - In setContentView(bind.root)
  
- In Fragment:  
- - override val screenLayout = R.layout.sp_Example_feature_fragment
- - private val binding by viewBinding(SpExampleFeatureFragmentBinding::bind)
+ Fragment:  
+ ```kotlin
+ override val screenLayout = R.layout.sp_Example_feature_fragment
+ private val binding by viewBinding(SpExampleFeatureFragmentBinding::bind)
+ ```
  
  Custom view:
- - private val binding by lazy { SpCustomExampleBinding.inflate(LayoutInflater.from(context),this,true) }
+ ```kotlin
+ private val binding by lazy { SpCustomExampleBinding.inflate(LayoutInflater.from(context),this,true) }
+ ```
  
  Adapter:
- 
+ ```kotlin
+ override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HashTagViewHolder {
+        val binding = HashTagListItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return HashTagViewHolder(binding)
+    }
+ ```
 
 # Resources
 
