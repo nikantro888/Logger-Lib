@@ -248,11 +248,11 @@ if (condition) foo()
 - It is permitted to describe several classes in one file **only** for `sealed` and `inner` classes.
 
 ### <a name='view_binding'>View Binding</a>
- We use View Binding in our project to replace deprecated kotlin synthetic.
+ We use View Binding in our project to replace deprecated kotlin synthetic. For activities and fragments, we have to use SPViewBindingExt.kt extension which handles everything by itself, this extension helps us to avoid memory leaks and make implementation much easier.
  
- ### <a name='implementation'>Implementation</a>
+ #### <a name='implementation'>Implementation</a>
  
- Fragment:  
+ In Fragment:  
  - override val screenLayout = R.layout.sp_Example_feature_fragment
  - private val binding by viewBinding(SpExampleFeatureFragmentBinding::bind)
 
