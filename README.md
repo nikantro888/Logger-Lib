@@ -75,7 +75,7 @@ Extends [Kotlin developers team code style](https://kotlinlang.org/docs/referenc
 10. [Condition operators](#condition_operator)
 11. [Template header](#template_header)
 12. [Files](#files)
-13. [View Binding](#View binding)
+13. [View Binding](#view binding)
 
 
 ### <a name='linelength'>Line length</a>
@@ -246,7 +246,7 @@ if (condition) foo()
 ### <a name='files'>Files</a>
 - It is permitted to describe several classes in one file **only** for `sealed` and `inner` classes.
 
-### <a name='View binding'>View Binding</a>
+### <a name='view binding'>View Binding</a>
 - It is permitted to describe several classes in one file **only** for `sealed` and `inner` classes.
 
 # Resources
