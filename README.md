@@ -295,6 +295,14 @@ if (condition) foo()
        descriptionTextView.text = "description"
   }
   ```
+  * Include layout binding
+ ```kotlin
+ binding.includeLayoutId.titleTextView.text = "space"
+ ```
+  * Use root to make changes for include layout  
+ ```kotlin
+ binding.includeLayoutId.root.visibility = VISIBLE
+ ```
    
 
 # Resources
