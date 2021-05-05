@@ -250,11 +250,21 @@ if (condition) foo()
 ### <a name='view_binding'>View Binding</a>
  We use View Binding in our project to replace deprecated kotlin synthetic. For activities and fragments, we have to use SPViewBindingExt.kt extension which handles everything by itself, this extension helps us to avoid memory leaks and make implementation much easier.
  
- #### <a name='implementation'>Implementation</a>
+ ### <a name='implementation'>View Binding implementation</a>
+ 
+ Activity:
+ - private val bind by viewBinding(ActivityExampleLayoutBinding::inflate) 
+ - In setContentView(bind.root)
  
  In Fragment:  
  - override val screenLayout = R.layout.sp_Example_feature_fragment
  - private val binding by viewBinding(SpExampleFeatureFragmentBinding::bind)
+ 
+ Custom view:
+ - private val binding by lazy { SpCustomExampleBinding.inflate(LayoutInflater.from(context),this,true) }
+ 
+ Adapter:
+ 
 
 # Resources
 
