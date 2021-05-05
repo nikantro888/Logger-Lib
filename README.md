@@ -76,6 +76,7 @@ Extends [Kotlin developers team code style](https://kotlinlang.org/docs/referenc
 11. [Template header](#template_header)
 12. [Files](#files)
 13. [View Binding](#view_binding)
+      * 13.1 [Implementation](#implementation)
 
 
 ### <a name='linelength'>Line length</a>
@@ -249,7 +250,7 @@ if (condition) foo()
 ### <a name='view_binding'>View Binding</a>
  We use View Binding in our project to replace deprecated kotlin synthetic.
  
- ##Implementation
+ ## <a name='implementation'>Implementation</a>
  
  Fragment:  
  - override val screenLayout = R.layout.sp_Example_feature_fragment
