@@ -77,7 +77,8 @@ Extends [Kotlin developers team code style](https://kotlinlang.org/docs/referenc
 12. [Files](#files)
 13. [View Binding](#view_binding)
       * 13.1 [Implementation](#implementation)
-      * 13.2 [Advices](#Advices)
+      * 13.2 [Advices](#advices)
+      * 13.3 [Migration](#migration)
 
 
 ### <a name='linelength'>Line length</a>
@@ -281,7 +282,7 @@ if (condition) foo()
         return ViewHolder(binding)
     }
  ```
-  ### <a name='Advices'>Recomendations for view binding</a>
+  ### <a name='advices'>Recomendations for view binding</a>
    
    * Binding
  ```kotlin
@@ -303,6 +304,9 @@ if (condition) foo()
  ```kotlin
  binding.includeLayoutId.root.visibility = VISIBLE
  ```
+ 
+  ### <a name='advices'>Recomendations for view binding</a>
+   - For easier migration, remove kotlin synthetic imports from your class to see exactly which lines needs view binding. 
    
 
 # Resources
