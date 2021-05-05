@@ -246,7 +246,7 @@ if (condition) foo()
 ### <a name='files'>Files</a>
 - It is permitted to describe several classes in one file **only** for `sealed` and `inner` classes.
 
-### <a name='View binding'>View Binding 2</a>
+### <a name='View binding'>View Binding</a>
 - It is permitted to describe several classes in one file **only** for `sealed` and `inner` classes.
 
 # Resources
