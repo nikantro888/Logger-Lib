@@ -77,6 +77,7 @@ Extends [Kotlin developers team code style](https://kotlinlang.org/docs/referenc
 12. [Files](#files)
 13. [View Binding](#view_binding)
       * 13.1 [Implementation](#implementation)
+      * 13.2 [Advices](#Advices)
 
 
 ### <a name='linelength'>Line length</a>
@@ -253,8 +254,10 @@ if (condition) foo()
  ### <a name='implementation'>View Binding implementation</a>
  
  Activity:
- - private val bind by viewBinding(ActivityExampleLayoutBinding::inflate) 
- - In setContentView(bind.root)
+ ```kotlin
+ private val bind by viewBinding(ActivityExampleLayoutBinding::inflate) 
+ In setContentView(bind.root)
+ ```
  
  Fragment:  
  ```kotlin
@@ -269,11 +272,13 @@ if (condition) foo()
  
  Adapter:
  ```kotlin
- override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HashTagViewHolder {
-        val binding = HashTagListItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return HashTagViewHolder(binding)
+ override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        val binding = ExampleItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return ViewHolder(binding)
     }
  ```
+  ### <a name='Advices'>Recomendations for view binding</a>
+
 
 # Resources
 
