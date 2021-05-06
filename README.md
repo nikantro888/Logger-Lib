@@ -305,7 +305,7 @@ if (condition) foo()
  binding.includeLayoutId.root.visibility = VISIBLE
  ```
  
-  ### <a name='advices'>Recomendations for view binding</a>
+  ### <a name='advices'>Migration</a>
    - For easier migration from synthetic to view binding, remove kotlin synthetic imports from your class to see exactly which lines needs view binding. 
    
 
