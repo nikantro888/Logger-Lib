@@ -309,6 +309,7 @@ if (condition) foo()
   ### <a name='advices'>Migration</a>
    - For easier migration from synthetic to view binding, remove kotlin synthetic imports from your class to see exactly which lines needs view binding. 
    
+### <a name='event_bus'>Eventbus</a>
 
 # Resources
 
