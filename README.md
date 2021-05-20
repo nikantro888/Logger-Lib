@@ -79,7 +79,7 @@ Extends [Kotlin developers team code style](https://kotlinlang.org/docs/referenc
       * 13.1 [Implementation](#implementation)
       * 13.2 [Recommendations](#recommendation)
       * 13.3 [Migration](#migration)
-14. [Eventbus] (#event_bus)     
+14. [Eventbus](#event_bus)     
 
 
 ### <a name='linelength'>Line length</a>
@@ -310,6 +310,8 @@ if (condition) foo()
    - For easier migration from synthetic to view binding, remove kotlin synthetic imports from your class to see exactly which lines needs view binding. 
    
 ### <a name='event_bus'>Eventbus</a>
+ An Eventbus is a mechanism that allows different components to communicate with each other without knowing about each other. A component can send an Event to the Eventbus without knowing who will pick it up or how many others will pick it up. Components can also listen to Events on an Eventbus, without knowing who sent the Events. That way, components can communicate without depending on each other. Also, it is very easy to substitute a component. As long as the new component understands the Events that are being sent and received, the other components will never know.
+
 
 # Resources
 
