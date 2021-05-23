@@ -311,6 +311,15 @@ if (condition) foo()
    
 ### <a name='event_bus'>Eventbus</a>
  An Eventbus is a mechanism that allows different components to communicate with each other without knowing about each other. A component can send an Event to the Eventbus without knowing who will pick it up or how many others will pick it up. Components can also listen to Events on an Eventbus, without knowing who sent the Events. That way, components can communicate without depending on each other. Also, it is very easy to substitute a component. As long as the new component understands the Events that are being sent and received, the other components will never know.
+### <a name='event_bus_sendEvent'>Sending event</a>
+ - Firstly, we should create specific event key to send event with it which gives us possibility to catch that key from another place.
+  ```kotlin
+  sealed class SPStoryFeatureEvents {
+    class SPStoryClickEvent: SPEvent
+    class SPStoryClickEvent(usarname:String): SPEvent
+}
+ ```
+
 
 
 # Resources
