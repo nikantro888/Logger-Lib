@@ -325,11 +325,11 @@ if (condition) foo()
 }
  ```
 ### <a name='event_bus_send_event'>Sending event</a>
-- Events can be send from every viewmodel, where eventbus is already built in serviceFacade object. 
+- Events can be send from every viewmodel, where eventbus is already built in, inside serviceFacade object. 
 - executeEvent is a extension which give us posibility to send events easily.
-  ```kotlin
+```kotlin
    serviceFacade.eventbus.executeEvent(SPStoryFeatureEvents.SPStoryClickEvent("spaceUser"))
- ```
+```
  ### <a name='event_bus_send_event'>Listeneing to events</a>
 
 # Resources
