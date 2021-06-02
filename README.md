@@ -320,7 +320,7 @@ if (condition) foo()
     class SPStoryClickEvent: SPEvent
     
     // we can path events any values as a param.
-    class SPStoryClickEvent(val usarname:String): SPEvent
+    class SPStoryClickEvent(val usarname: String): SPEvent
 
 }
  ```
@@ -330,6 +330,7 @@ if (condition) foo()
 ```kotlin
    // without parameter
    serviceFacade.eventbus.executeEvent(SPStoryFeatureEvents.SPStoryClickEvent())
+   
    // with parameter
    serviceFacade.eventbus.executeEvent(SPStoryFeatureEvents.SPStoryClickEvent("spaceUser"))
 ```
