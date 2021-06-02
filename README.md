@@ -320,12 +320,17 @@ if (condition) foo()
     class SPStoryClickEvent: SPEvent
     
     // we can path events any values as a param.
-    class SPStoryClickEvent(usarname:String): SPEvent
+    class SPStoryClickEvent(val usarname:String): SPEvent
 
 }
  ```
-
-
+### <a name='event_bus_send_event'>Sending event</a>
+- Events can be send from every viewmodel, where eventbus is already built in serviceFacade object. 
+- executeEvent is a extension which give us posibility to send events easily.
+  ```kotlin
+   serviceFacade.eventbus.executeEvent(SPStoryFeatureEvents.SPStoryClickEvent("spaceUser"))
+ ```
+ ### <a name='event_bus_send_event'>Listeneing to events</a>
 
 # Resources
 
