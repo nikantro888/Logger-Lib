@@ -111,7 +111,7 @@ val promoItemDistanceTradeLink: String = promoItem.distanceTradeLinks?.appLink
 
 ------------
 
-When describing a variable with a delegate that does not fit on one line, leave a description with an opening brace on one line, transferring the rest of the expression to the next line:
+When describing variable with a delegate that does not fit on one line, leave a description with an opening brace on one line, transferring the rest of the expression to the next line:
 
 ```kotlin
 private val promoItem: MarkPromoItem by lazy {
