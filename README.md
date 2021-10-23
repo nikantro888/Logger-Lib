@@ -720,13 +720,3 @@ Module short description goes here it seems nobody bothered to drop few words.
 Module short description goes here it seems nobody bothered to drop few words. 
 
 
-### SpaceUtil
-[link](SpaceUtil) 
-Module short description goes here it seems nobody bothered to drop few words. 
-
-
-
-### SpaceVerification
-[link](SpaceVerification) 
-Module short description goes here it seems nobody bothered to drop few words. 
-
