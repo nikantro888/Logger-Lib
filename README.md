@@ -715,8 +715,6 @@ Feature module
 Module short description goes here it seems nobody bothered to drop few words. 
 
 
-### SpaceTransfer
-[link](SpaceTransfer) 
-Module short description goes here it seems nobody bothered to drop few words. 
+
 
 
